@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+   <body>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Для анализа химической активности соединений была использован принцип молекулярного подобия. В его основе лежит идея, что структурно схожие молекулы предположительно обладают сходной активностью. Поиск структурного сходства молекул основан на доле функциональных групп, которые присутствуют одновременно в обеих молекулах.
+
+Для описания молекул были использованы molecular fingerprints (Morgan Fingerprints), которые содержат информацию о присутствии или отсутствии определенных признаков в химическом соединении, например, фрагментов. Пространства fingerprints были визуализированы с помощью различных методов уменьшения размерности, таких как PCA, t-SNE и UMAP. Структурное сходство двух молекул чаще всего оценивается путем вычисления коэффициента Танимото (Tc, tanimoto_similarity). Для наглядности, были построены распределения Tc.
+
+При кластеризации малых молекул сходство внутри каждого кластера определяется коэффициентом Танимото. При кластеризации был использован алгоритм, предложенный в статье: Unsupervised Data Base Clustering Based on Daylight's Fingerprint and Tanimoto Similarity: A Fast and Automated Way To Cluster Small and Large Data Sets. Для наглядности,  была проведена иерархическая кластеризация с использованием ранее подсчитанные коэффициенты Танимото. Результаты  были представлены в виде дендрограмм.
+</font></p>
+     
+<table border="0" class="dataframe" style="margin:0 auto">
+  <tbody>
+  <tr valign="top">
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="hist_tanimoto_similarity_L1000FWD.png" alt="Simply Easy Learning" width="500"
+
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">b</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="pca_L1000FWD.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+   <td valign="top"style = "background-color:	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">c</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="tsne_L1000FWD.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+     <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">d</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="umap_L1000FWD.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+    <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">e</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="dendrogram_L1000FWD.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+  </tr>
+  </tbody>
+</table>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Результаты анализа соединений top50 L1000FWD: (a) Распределение коэффициентов Танимото. (b) Визуализация пространства fingerprints после уменьшения размерности алгоритмом PCA. (c) Визуализация пространства fingerprints после уменьшения размерности алгоритмом t-SNE. (d) Визуализация пространства fingerprints после уменьшения размерности алгоритмом UMAP. (e) Дендрограмма.</font></p>
+
+      
+<p style="margin-top:1.5cm;"> <font color="DarkBlue" face="Times New Roman" size="4"></font></p>
+<table border="0" class="dataframe" style="margin:0 auto">
+  <tbody>
+  <tr valign="top">
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="hist_tanimoto_similarity_iLINCS.png" alt="Simply Easy Learning" width="500"
+
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">b</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="pca_iLINCS.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+   <td valign="top"style = "background-color:	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">c</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="tsne_iLINCS.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+     <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">d</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="umap_iLINCS.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+    <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">e</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="dendrogram_iLINCS.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+  </tr>
+  </tbody>
+</table>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Результаты анализа соединений top50 iLINCS: (a) Распределение коэффициентов Танимото. (b) Визуализация пространства fingerprints после уменьшения размерности алгоритмом PCA. (c) Визуализация пространства fingerprints после уменьшения размерности алгоритмом t-SNE. (d) Визуализация пространства fingerprints после уменьшения размерности алгоритмом UMAP. (e) Дендрограмма.</font></p>
+
+      
+<p style="margin-top:1.5cm;"> <font color="DarkBlue" face="Times New Roman" size="4"></font></p> 
+ <table border="0" class="dataframe" style="margin:0 auto">
+  <tbody>
+  <tr valign="top">
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="hist_tanimoto_similarity_CLUE.png" alt="Simply Easy Learning" width="500"
+
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">b</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="pca_CLUE.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+   <td valign="top"style = "background-color:	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">c</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="tsne_CLUE.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+     <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">d</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="umap_CLUE.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+    <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">e</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="dendrogram_CLUE.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+  </tr>
+  </tbody>
+</table>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Результаты анализа соединений top50 CLUE: (a) Распределение коэффициентов Танимото. (b) Визуализация пространства fingerprints после уменьшения размерности алгоритмом PCA. (c) Визуализация пространства fingerprints после уменьшения размерности алгоритмом t-SNE. (d) Визуализация пространства fingerprints после уменьшения размерности алгоритмом UMAP. (e) Дендрограмма.</font></p>
+
+      
+<p style="margin-top:1.5cm;"> <font color="DarkBlue" face="Times New Roman" size="4"></font></p>
+<table border="0" class="dataframe" style="margin:0 auto">
+  <tbody>
+  <tr valign="top">
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="hist_tanimoto_similarity_TopoCMap.png" alt="Simply Easy Learning" width="500"
+
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">b</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="pca_TopoCMap.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+   <td valign="top"style = "background-color:	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">c</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="tsne_TopoCMap.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+     <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">d</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="umap_TopoCMap.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+    <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">e</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="dendrogram_TopoCMap.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+  </tr>
+  </tbody>
+</table>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Результаты анализа соединений top50 TopoCMap: (a) Распределение коэффициентов Танимото. (b) Визуализация пространства fingerprints после уменьшения размерности алгоритмом PCA. (c) Визуализация пространства fingerprints после уменьшения размерности алгоритмом t-SNE. (d) Визуализация пространства fingerprints после уменьшения размерности алгоритмом UMAP. (e) Дендрограмма.</font></p>
+
+<table border="0" class="dataframe" style="margin:0 auto">
+  <tbody>
+  <tr valign="top">
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="hist_tanimoto_similarity_all.png" alt="Simply Easy Learning" width="500"
+
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">b</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="pca_all.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+   <td valign="top"style = "background-color:	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">c</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="tsne_all.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+     <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">d</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="umap_all.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+    <td valign="top"style = "background-color:#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">e</font> </td>
+    <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <img src="dendrogram_all.png" alt="Simply Easy Learning" width="500"
+         height="500"></td>
+  </tr>
+  </tbody>
+</table>
+<p style="margin-top:1.5cm;text-align:center"> <font color="DarkBlue" face="Times New Roman" size="4"> Результаты анализа соединений, полученных объединением top50 всех инструментов: (a) Распределение коэффициентов Танимото. (b) Визуализация пространства fingerprints после уменьшения размерности алгоритмом PCA. (c) Визуализация пространства fingerprints после уменьшения размерности алгоритмом t-SNE. (d) Визуализация пространства fingerprints после уменьшения размерности алгоритмом UMAP. (e) Дендрограмма.</font></p>
+   </body>
+</html>
