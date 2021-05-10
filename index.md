@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
    <body>
-
-<table style="border: 1px dashed; width: 500px;">
+      
+<table border="0" class="dataframe" style="margin:0 auto">
   <tbody>
   <tr valign="top">
     <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
@@ -23,7 +23,7 @@
 <p style="margin-top:1.5cm;"> <font color="DarkBlue" face="Times New Roman" size="4"> Распределение значений connectivity score для: (a) TopoCMap; (b) CLUE; (c) iLINCS; (d) L1000FWD.</font></p>
 
 
-<table style="border: 1px dashed; width: 500px;">
+<table border="0" class="dataframe" style="margin:0 auto">
   <tbody>
   <tr valign="top">
     <td valign="top"style = "background-color: 	#FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"> <font size="3" color="DarkBlue" face="Times New Roman">a</font> </td>
