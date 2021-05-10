@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+.site-main table td {
+    padding: 7px 10px;
+    border: 1px solid #cfcfcf;
+}
