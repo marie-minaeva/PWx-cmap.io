@@ -1,0 +1,906 @@
+<p><table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">pert_id</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">pert_name</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">molecular_formula</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">short description MOA</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">long description MOA</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">illnesses</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">pert_url_1</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">Pubchem cid</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">Pubchem url_1</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">DrugBank url_1</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">FDA</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">rank</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">x_1 pca</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">x_2 pca</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">PCA_cluster</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">x_1 umap</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">x_2umap</th>
+      <th style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;color: #305496;text-align: center;border-bottom: 2px solid #305496;padding: 0px 20px 0px 0px">UMAP_cluster</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K07995125</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">KU-C104487</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C24H25N5O3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td width="10" height="100" style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44640175>https://pubchem.ncbi.nlm.nih.gov/compound/44640175</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44640175</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44640175>https://pubchem.ncbi.nlm.nih.gov/compound/44640175</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.995119</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.246943</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.728676</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.482519</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K97829610</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K97829610</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C20H29N3O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54639105>https://pubchem.ncbi.nlm.nih.gov/compound/54639105</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54639105</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54639105>https://pubchem.ncbi.nlm.nih.gov/compound/54639105</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.498607</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.370484</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.846238</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10.673592</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-A90643929</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-A90643929</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C51H47N3O7</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/6729274>https://pubchem.ncbi.nlm.nih.gov/compound/6729274</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">6729274</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/6729274>https://pubchem.ncbi.nlm.nih.gov/compound/6729274</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.220914</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.374411</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.705611</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.302781</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K90864987</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">cobalt(II)-chloride</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Cl2Co</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">CoCl2, a Mimic of Hypoxia, Induces Formation of Polyploid Giant Cells with Stem Characteristics; HSP inducer</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Treatment of HCT-116 and Caco-2 colon cancer cells with the hypoxia mimic CoCl2 induced the formation of cells with larger cell and nuclear size (PGCCs), while the cells with normal morphology were selectively eliminated. Cytometric analysis showed that CoCl2 treatment induced G2 cell cycle arrest and the generation of a polyploid cell subpopulation with increased cellular DNA content. Polyploidy of hypoxia-induced PGCCs was confirmed by FISH analysis. Furthermore, CoCl2 treatment effectively induced the stabilization of HIF-1α, the differential expression of a truncated form of p53 (p47) and decreased levels of cyclin D1, indicating molecular mechanisms associated with cell cycle arrest at G2. Generation of PGCCs also contributed to expansion of a cell subpopulation with cancer stem cells (CSCs) characteristics, as indicated by colonosphere formation assays, and enhanced chemoresistance to 5-fluorouracil and oxaliplatin. In conclusion, the pharmacological induction of hypoxia in colon cancer cells causes the formation of PGCCs, the expansion of a cell subpopulation with CSC characteristics and chemoresistance. The molecular mechanisms involved, including the stabilization of HIF-1 α, the involvement of p53/p47 isoform and cell cycle arrest at G2, suggest novel targets to prevent tumor relapse and treatment failure in colon cancer.</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">experimental</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/24288>https://pubchem.ncbi.nlm.nih.gov/compound/24288</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">24288</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/24288>https://pubchem.ncbi.nlm.nih.gov/compound/24288</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">6</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.967362</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.815892</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.79774</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">923823.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K00695053</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K00695053</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C20H30N2O5S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54638795>https://pubchem.ncbi.nlm.nih.gov/compound/54638795</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54638795</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54638795>https://pubchem.ncbi.nlm.nih.gov/compound/54638795</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">7</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.614388</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.675136</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.104427</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.333108</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K34311186</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K34311186</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C25H35N5O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54633774>https://pubchem.ncbi.nlm.nih.gov/compound/54633774</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54633774</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54633774>https://pubchem.ncbi.nlm.nih.gov/compound/54633774</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.609728</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4.9635</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.465884</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.634833</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K84505894</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K84505894</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C24H35N5O5</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44485065>https://pubchem.ncbi.nlm.nih.gov/compound/44485065</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44485065</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44485065>https://pubchem.ncbi.nlm.nih.gov/compound/44485065</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">9</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.350755</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.970187</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.769188</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">965184.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K56990873</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K56990873</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C28H38FN3O4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54631857>https://pubchem.ncbi.nlm.nih.gov/compound/54631857</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54631857</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54631857>https://pubchem.ncbi.nlm.nih.gov/compound/54631857</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.868497</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.962369</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-4.28905</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11.170952</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K48598367</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K48598367</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C17H15FN2O3S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54650132>https://pubchem.ncbi.nlm.nih.gov/compound/54650132</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54650132</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54650132>https://pubchem.ncbi.nlm.nih.gov/compound/54650132</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.781113</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.186159</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.558443</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1189225.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K27982554</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K27982554</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C30H51N3O6S</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44502944>https://pubchem.ncbi.nlm.nih.gov/compound/44502944</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44502944</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44502944>https://pubchem.ncbi.nlm.nih.gov/compound/44502944</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">13</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.691394</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">18087957.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.924335</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1004458.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K36241360</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K36241360</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C35H52N4O6</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44501788>https://pubchem.ncbi.nlm.nih.gov/compound/44501788</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44501788</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44501788>https://pubchem.ncbi.nlm.nih.gov/compound/44501788</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">14</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">42759686.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.633008</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.390718</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.541325</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K07303502</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">arachidonyl-trifluoro-methane</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C21H31F3O</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">putative specific cytosolic phospholipase A2 inhibitor;Cytosolic phospholipase inhibitor\tPLA2G4A</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">The goal of this study was to determine the effects of a putative specific cytosolic phospholipase A2 inhibitor, arachidonyl trifluoromethyl ketone (AACOCF3), on arachidonic acid (AA) release and lipid mediator biosynthesis by ionophore-stimulated human neutrophils. Initial studies indicated that AACOCF3 at concentrations 0-10 micro m did not affect AA release from neutrophils. In contrast, AACOCF3 potently inhibited leukotriene B4 formation by ionophore-stimulated neutrophils (IC50 approximately 2.5 micro m). Likewise, AACOCF3 significantly inhibited the biosynthesis of platelet activating factor. In cell-free assay systems, 10 micro m AACOCF3 inhibited 5-lipoxygenase and CoA-independent transacylase activities. [3H]AA labeling studies indicated that the specific activities of cell-associated AA mimicked that of leukotriene B4 and PtdCho/PtdIns, while the specific activities of AA released into the supernatant fluid closely mimicked that of PtdEtn. Taken together, these data argue for the existence of segregated pools of arachidonate in human neutrophils. One pool of AA is linked to lipid mediator biosynthesis while another pool provides free AA that is released from cells. Additionally, the data suggest that AACOCF3 is also an inhibitor of CoA-independent transacylase and 5-lipoxygenase. Thus, caution should be exercised in using AACOCF3 as an inhibitor of cytosolic phospholipase A2 in whole cell assays because of the complexity of AA metabolism</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5280436>https://pubchem.ncbi.nlm.nih.gov/compound/5280436</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">5280436</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5280436>https://pubchem.ncbi.nlm.nih.gov/compound/5280436</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">15</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.698106</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.711811</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.783281</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.298994</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K95922469</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K95922469</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C25H35N5O5</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54633775>https://pubchem.ncbi.nlm.nih.gov/compound/54633775</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54633775</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54633775>https://pubchem.ncbi.nlm.nih.gov/compound/54633775</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">16</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.609728</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4.9635</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.665742</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10702305.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K39063656</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K39063656</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C29H33FN2O5S</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54637932>https://pubchem.ncbi.nlm.nih.gov/compound/54637932</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54637932</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54637932>https://pubchem.ncbi.nlm.nih.gov/compound/54637932</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">18</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.980506</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.696483</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3134459.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10.89194</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K75648723</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K75648723</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C33H55N5O6</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54614898>https://pubchem.ncbi.nlm.nih.gov/compound/54614898</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54614898</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54614898>https://pubchem.ncbi.nlm.nih.gov/compound/54614898</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">19</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.721788</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.538803</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.634875</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.781349</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K64418159</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K64418159</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C29H34N4O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54619450>https://pubchem.ncbi.nlm.nih.gov/compound/54619450</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54619450</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54619450>https://pubchem.ncbi.nlm.nih.gov/compound/54619450</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">20</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.989083</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-21027159.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.656431</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.60385</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K87730884</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K87730884</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C29H32N4O5S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54654600>https://pubchem.ncbi.nlm.nih.gov/compound/54654600</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54654600</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54654600>https://pubchem.ncbi.nlm.nih.gov/compound/54654600</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">21</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.862477</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">33207045.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-472683.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11.41661</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K82842087</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K82842087</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C25H21N5O2S2</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/2222450>https://pubchem.ncbi.nlm.nih.gov/compound/2222450</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2222450</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/2222450>https://pubchem.ncbi.nlm.nih.gov/compound/2222450</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">22</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.92452</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.410057</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.242001</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.677012</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K13765840</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K13765840</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C24H34N6O6</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44485070>https://pubchem.ncbi.nlm.nih.gov/compound/44485070</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44485070</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44485070>https://pubchem.ncbi.nlm.nih.gov/compound/44485070</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">23</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">25068601.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.325005</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.938318</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.517132</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K87412446</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K87412446</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C30H52N4O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44496011>https://pubchem.ncbi.nlm.nih.gov/compound/44496011</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44496011</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44496011>https://pubchem.ncbi.nlm.nih.gov/compound/44496011</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">25</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.827573</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.547132</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.848209</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">867833.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K17410712</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K17410712</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C29H50N4O7S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5461...>https://pubchem.ncbi.nlm.nih.gov/compound/5461...</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54614704</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54614704>https://pubchem.ncbi.nlm.nih.gov/compound/54614704</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">26</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4.176542</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.242989</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.751464</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10.149184</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K74598339</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K74598339</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C28H40N4O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44489325>https://pubchem.ncbi.nlm.nih.gov/compound/44489325</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44489325</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44489325>https://pubchem.ncbi.nlm.nih.gov/compound/44489325</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">27</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">33285095.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.850776</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.458314</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">9.246248</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K53798768</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K53798768</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C26H34N2O8S2</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618238>https://pubchem.ncbi.nlm.nih.gov/compound/54618238</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618238</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618238>https://pubchem.ncbi.nlm.nih.gov/compound/54618238</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">28</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.383857</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.401221</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.438981</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.701336</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K56183302</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K56183302</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C22H32N6O4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44505386>https://pubchem.ncbi.nlm.nih.gov/compound/44505386</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44505386</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44505386>https://pubchem.ncbi.nlm.nih.gov/compound/44505386</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">29</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.490141</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.704047</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.120926</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.303403</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K90074540</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K90074540</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C32H39N5O5</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54637819>https://pubchem.ncbi.nlm.nih.gov/compound/54637819</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54637819</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54637819>https://pubchem.ncbi.nlm.nih.gov/compound/54637819</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">30</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.774839</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-17180787.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.707598</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.39711</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K35424586</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">SA-247714</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C33H43N5O4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44507332>https://pubchem.ncbi.nlm.nih.gov/compound/44507332</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44507332</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44507332>https://pubchem.ncbi.nlm.nih.gov/compound/44507332</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">31</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.349878</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.49791</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-606652.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.484236</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K95190454</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K95190454</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C27H31N5O4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618772>https://pubchem.ncbi.nlm.nih.gov/compound/54618772</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618772</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618772>https://pubchem.ncbi.nlm.nih.gov/compound/54618772</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">32</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2.249327</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.525016</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.735369</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1131419.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K13779607</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K13779607</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C17H19F3N2O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54638772>https://pubchem.ncbi.nlm.nih.gov/compound/54638772</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54638772</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54638772>https://pubchem.ncbi.nlm.nih.gov/compound/54638772</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">33</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.518059</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.221588</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.47503</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">9.709545</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-A78322124</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">dobutamine</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C18H23NO3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Beta-1 adrenergic receptor agonist; \nBeta-2 adrenergic receptor agonist;\nAlpha-1 adrenergic receptors agonist;\nEstrogen receptor alpha</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Dobutamine is a direct-acting inotropic agent whose primary activity results from stimulation of the beta-adrenoceptors of the heart while producing comparatively mild chronotropic, hypertensive, arrhythmogenic, and vasodilative effects. Dobutamine acts primarily on beta-1 adrenergic receptors, with negligible effects on beta-2 or alpha receptors. It does not cause the release of endogenous norepinephrine, as does dopamine. Dobutamine directly stimulates beta-1 receptors of the heart to increase myocardial contractility and stroke volume, resulting in increased cardiac output.</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">used to treat cardiac decompensation in patients with organic heart disease or from cardiac surgery.</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/65324>https://pubchem.ncbi.nlm.nih.gov/compound/65324</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">65324</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/65324>https://pubchem.ncbi.nlm.nih.gov/compound/65324</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://go.drugbank.com/drugs/DB00841>https://go.drugbank.com/drugs/DB00841</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">+</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">34</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.569263</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.569284</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.221306</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.982643</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-A07395371</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">esmolol</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C16H25NO4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Beta-1 adrenergic receptor\tantagonist</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Similar to other beta-blockers, esmolol blocks the agonistic effect of the sympathetic neurotransmitters by competing for receptor binding sites. Because it predominantly blocks the beta-1 receptors in cardiac tissue, it is said to be cardioselective. In general, so-called cardioselective beta-blockers are relatively cardioselective; at lower doses they block beta-1 receptors only but begin to block beta-2 receptors as the dose increases. At therapeutic dosages, esmolol does not have intrinsic sympathomimetic activity (ISA) or membrane-stabilizing (quinidine-like) activity. Antiarrhythmic activity is due to blockade of adrenergic stimulation of cardiac pacemaker potentials. In the Vaughan Williams classification of antiarrhythmics, beta-blockers are considered to be class II agents.</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">used for the short-term control of ventricular rate and heart rate in various types of tachycardia, including perioperative tachycardia and hypertension.</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/104769>https://pubchem.ncbi.nlm.nih.gov/compound/104769</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">104769</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/104769>https://pubchem.ncbi.nlm.nih.gov/compound/104769</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://go.drugbank.com/drugs/DB00187>https://go.drugbank.com/drugs/DB00187</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">+</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">35</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.708933</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.72231</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.300595</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.644631</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K71879491</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">tretinoin</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C20H28O2</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Retinoids such as tretinoin are important regulators of cell reproduction, proliferation, and differentiation and are used to treat acne and photodamaged skin and to manage keratinization disorders such as ichthyosis and keratosis follicularis. Tretinoin also represents the class of anticancer drugs called differentiating agents and is used in the treatment of acute promyelocytic leukemia (APL).</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Tretinoin binds to alpha, beta, and gamma retinoic acid receptors (RARs). RAR-alpha and RAR-beta have been associated with the development of acute promyelocytic leukemia and squamous cell cancers, respectively. RAR-gamma is associated with retinoid effects on mucocutaneous tissues and bone. Although the exact mechanism of action of tretinoin is unknown, current evidence suggests that the effectiveness of tretinoin in acne is due primarily to its ability to modify abnormal follicular keratinization. Comedones form in follicles with an excess of keratinized epithelial cells. Tretinoin promotes detachment of cornified cells and the enhanced shedding of corneocytes from the follicle. By increasing the mitotic activity of follicular epithelia, tretinoin also increases the turnover rate of thin, loosely-adherent corneocytes. Through these actions, the comedo contents are extruded and the formation of the microcomedo, the precursor lesion of acne vulgaris, is reduced. Tretinoin is not a cytolytic agent but instead induces cytodifferentiation and decreased proliferation of APL cells in culture and in vivo. When Tretinoin is given systemically to APL patients, tretinoin treatment produces an initial maturation of the primitive promyelocytes derived from the leukemic clone, followed by a repopulation of the bone marrow and peripheral blood by normal, polyclonal hematopoietic cells in patients achieving complete remission (CR). The exact mechanism of action of tretinoin in APL is unknown.</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">used to treat acne and photodamaged skin and to manage keratinization disorders such as ichthyosis and keratosis follicularis. Tretinoin also represents the class of anticancer drugs called differentiating agents and is used in the treatment of acute promyelocytic leukemia (APL).</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/444795>https://pubchem.ncbi.nlm.nih.gov/compound/444795</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">444795</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/444795>https://pubchem.ncbi.nlm.nih.gov/compound/444795</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://go.drugbank.com/drugs/DB00755>https://go.drugbank.com/drugs/DB00755</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">+</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">36</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-35176989.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.999996</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.305805</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.628779</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K23240038</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K23240038</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C26H29FN4O5S</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618732>https://pubchem.ncbi.nlm.nih.gov/compound/54618732</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618732</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618732>https://pubchem.ncbi.nlm.nih.gov/compound/54618732</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">38</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.244252</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.244252</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.42959</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1410653.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K47943470</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">tyrphostin-51</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C13H8N4O3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">GPR35 agonist</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">Tyrphostin-51 was found to cause internalization of GPR35, phosphorylation of extracellular signal-regulated kinase (ERK) and translocation of b -arrestin via GPR35. Furthermore, the tyrphostin-51 DMR can be blocked by a known GPR35 antagonist. However, for certain ligands, the dose response can be biphasic, leading to dual efficacy.</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5328807>https://pubchem.ncbi.nlm.nih.gov/compound/5328807</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">5328807</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5328807>https://pubchem.ncbi.nlm.nih.gov/compound/5328807</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">39</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-31515521.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.877038</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-4.151505</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.99126</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K19357327</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K19357327</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C23H35N3O5</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54631394>https://pubchem.ncbi.nlm.nih.gov/compound/54631394</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54631394</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54631394>https://pubchem.ncbi.nlm.nih.gov/compound/54631394</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">40</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.503613</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44751787.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.313871</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10.777334</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K99803997</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K99803997</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C23H26N4O3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54649825>https://pubchem.ncbi.nlm.nih.gov/compound/54649825</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54649825</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54649825>https://pubchem.ncbi.nlm.nih.gov/compound/54649825</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">41</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.534015</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.874987</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.444344</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.113158</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K60027289</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K60027289</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C28H36N4O4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54660830>https://pubchem.ncbi.nlm.nih.gov/compound/54660830</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54660830</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54660830>https://pubchem.ncbi.nlm.nih.gov/compound/54660830</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">42</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.82959</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.403766</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.534891</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11.50172</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K29458822</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K29458822</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C20H29N3O6S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618804>https://pubchem.ncbi.nlm.nih.gov/compound/54618804</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618804</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618804>https://pubchem.ncbi.nlm.nih.gov/compound/54618804</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">43</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.838982</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.996627</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.126539</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">10.183826</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K73789395</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">ZM-336372</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C23H23N3O3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">ZM336372 was screened as the first compound-suppressing BRAF, as well as CRAF, in vitro, and the feedback loop for RAF</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">The first-generation RAF inhibitors When RAF was first introduced as a target for cancer treatment, before the discovery of BRAFm, the first-generation inhibitors of RAF were small-molecule ATP-competitive inhibitors, which were explored to target CRAF in cancer. 39 ZM336372 was screened as the first compound-suppressing BRAF, as well as CRAF, in vitro, and the feedback loop for RAF appeared to suppress its own activation. 39 Sorafenib (Nexavar®, BAY43-9006) is the only first-generation RAF inhibitor that has gained approval from the US FDA; however, sorafenib exhibits weak antitumor activity in cells with BRAF-V600E and its clinical efficacy in the abovementioned cancers with WT BRAF might be attributed to its multikinase profile. No PFS benefit was detected from the addition of sorafenib to first-line mFOLFOX6 for mCRC in the RESPECT trial.40 Additionally, the combination of sorafenib and irinotecan41 or cetuximab42 had been evaluated in a trial for KRAS-mutated CRC; however, low or no objective responses were observed. Other first-generation RAF inhibitors, such as SB-590885,43 GDC-0879,44 GW5074,45 and L779450,46 were not applied in clinical practice (Figure 4).</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5730>https://pubchem.ncbi.nlm.nih.gov/compound/5730</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">5730</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/5730>https://pubchem.ncbi.nlm.nih.gov/compound/5730</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">45</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.221592</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">6878877.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.761077</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2046287.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K74537058</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K74537058</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C25H38N4O5</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44495903>https://pubchem.ncbi.nlm.nih.gov/compound/44495903</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44495903</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44495903>https://pubchem.ncbi.nlm.nih.gov/compound/44495903</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">47</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">28497769.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">606316.0</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.947808</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11.282193</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K25974714</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K25974714</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C30H49N3O7S</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44619573>https://pubchem.ncbi.nlm.nih.gov/compound/44619573</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44619573</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44619573>https://pubchem.ncbi.nlm.nih.gov/compound/44619573</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">48</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.75831</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.351898</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-3.169174</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.877049</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K35188988</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K35188988</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C27H42F3N3O5</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44490260>https://pubchem.ncbi.nlm.nih.gov/compound/44490260</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">44490260</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/44490260>https://pubchem.ncbi.nlm.nih.gov/compound/44490260</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">49</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3.461139</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.815979</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">4</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.963988</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">8.592463</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K05901394</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">terguride</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C20H28N4O</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">a serotonin receptor antagonist, is also being investigated as a PAH treatment, as serotonin has been implicated in proliferation of arterial smooth muscle cells</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">a serotonin receptor antagonist, is also being investigated as a PAH treatment, as serotonin has been implicated in proliferation of arterial smooth muscle cells</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">experimental</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/11957722>https://pubchem.ncbi.nlm.nih.gov/compound/11957722</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">11957722</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/11957722>https://pubchem.ncbi.nlm.nih.gov/compound/11957722</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://go.drugbank.com/drugs/DB13399>https://go.drugbank.com/drugs/DB13399</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">50</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.374073</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-0.319725</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-6.305005</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1.247511</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K52032805</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K52032805</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C24H33FN2O4S</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618483>https://pubchem.ncbi.nlm.nih.gov/compound/54618483</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618483</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618483>https://pubchem.ncbi.nlm.nih.gov/compound/54618483</a></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">51</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.521193</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-1.942369</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-5.912981</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.767964</td>
+      <td style = "background-color: #D9E1F2;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+    <tr>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K51848823</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">BRD-K51848823</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">C26H32N4O4</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618730>https://pubchem.ncbi.nlm.nih.gov/compound/54618730</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">54618730</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"><a href=https://pubchem.ncbi.nlm.nih.gov/compound/54618730>https://pubchem.ncbi.nlm.nih.gov/compound/54618730</a></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px"></td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">52</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">2.130286</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-2.124632</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">3</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">-515645.0</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">0.946791</td>
+      <td style = "background-color: #FFFFFF;font-family: Century Gothic;font-size: medium;text-align: center;padding: 0px 20px 0px 0px">1</td>
+    </tr>
+  </tbody>
+</table></p>
